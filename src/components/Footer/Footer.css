@@ -1,0 +1,132 @@
+:root{
+
+}
+.flex-column-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.Footer-container{
+    width: 100vw;
+    align-items: center;
+}
+.links_dis{
+    width: 75vw;
+    display: flex;
+    flex-direction: row;
+}
+.left-side{
+    width: 50vw;
+    text-transform: capitalize;
+    align-items: center;
+    font-size: 1.4vw;
+    border-right: 0.2rem solid var(--text_70);
+}
+.footer_link{
+    color: var(--text_70);
+    padding: 0.4vw;
+}
+.footer_link:hover{
+    color: var(--highlight_blue);
+}
+.right-side{
+    width: 50vw;
+}
+.footer_text_container{
+    width: 80%;
+    justify-content: left;
+}
+.heading_footer{
+    font-size: 2vw;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: var(--highlight_blue);
+    padding-bottom: 1rem;
+}
+.description_footer{
+    text-align: justify;
+    font-size: 1.3vw;
+    color: var(--text_70);
+    line-height: 150%;
+}
+.customIcon{
+    color: white;
+}
+.customIcon:hover{
+    color: var(--highlight_blue);
+}
+.footer{
+    flex-direction: column;
+}
+.social-links{
+    margin-top: 3vw;
+    width: 30vw;
+    display: flex;
+    justify-content: space-between;
+}
+.logo-f>img{
+    margin: 3vw;
+    width: 10vw;
+}
+@media screen and (max-width:426px){
+    .Footer-container{
+        width: 100vw;
+        align-items: center;
+    }
+    .links_dis{
+        width: 75vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .left-side{
+        text-transform: capitalize;
+        font-size: 2.4vw;
+        border-right: 0;
+        margin-bottom: 2vw;
+    }
+    .right-side{
+        width: 75vw;
+    }
+    .footer_text_container{
+        width: 80%;
+    }
+    .heading_footer{
+        font-size: 3.5vw;
+        text-align: center;
+        padding-bottom: 2vw;
+    }
+    .description_footer{
+        text-align: justify;
+        font-size: 2.4vw;
+        color: var(--text_70);
+        line-height: 150%;
+    }
+    .customIcon{
+        color: white;
+    }
+    .customIcon:hover{
+        color: var(--highlight_blue);
+    }
+    .footer{
+        flex-direction: column;
+    }
+    .footer_link{
+        color: var(--text_70);
+        padding: 0.4vw;
+    }
+    .footer_link:hover{
+        color: var(--highlight_blue);
+    }
+    .social-links{
+        margin-top: 3vw;
+        width: 30vw;
+        display: flex;
+        justify-content: space-between;
+    }
+    .logo-f>img{
+        margin: 3vw;
+        width: 10vw;
+    }
+}
