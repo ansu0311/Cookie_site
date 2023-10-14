@@ -1,0 +1,97 @@
+:root{
+    --margin-gap-plan:0.8vw;
+    --padding-gap-plan:3vw;
+    --size-l-laptop: 4.5vw;
+    --text-size-large: 5vw;
+    --image:url('../../assets2/sj-YDvfndOs4IQ-unsplash.jpg');
+    --image2:url('../../assets2/sara-sperry--EMvlQ5n8n0-unsplash.jpg');
+}
+.plans-container{
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.plans{
+    display: inline;
+    text-align: justify;
+    font-weight: 800;
+    font-size: 6vw;
+    line-height: 130%;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.7);
+}
+.plans_span{
+    font-size: var(--text-size-large);
+    display: inline;
+    background-color: var(--background_color);
+    line-height: 10%;
+    justify-content: center;
+    color: transparent;
+    border-radius: 3rem;
+}
+.plans_span img{
+    padding: 0 4vw 0 4vw;
+}
+.plans_img{
+    font-size: var(--text-size-large);
+    display: inline;
+    background-image: var(--image);
+    background-position: center;
+    background-size: cover;
+    border-radius: 3rem;
+    color: rgba(255, 255, 255, 0);
+}
+.plans_img1{
+    background-image: var(--image2);
+    background-position: top;
+}
+.brand{
+    color: var(--highlight_blue);
+}
+.egg_logo{
+    width: var(--size-l-laptop);
+    height: var(--size-l-laptop);
+    vertical-align: middle;
+    margin-top: -0.5vw;
+}
+@media screen and (max-width:700px) {
+    .plans{
+        font-size: 5.9vw;
+    }
+}
+@media screen and (max-width:640px) {
+    .plans{
+        font-size: 5.8vw;
+    }
+}
+@media screen and (max-width:572px) {
+    .plans{
+        font-size: 5.7vw;
+    }
+}
+@media screen and (max-width:506px) {
+    .plans{
+        font-size: 5.6vw;
+    }
+}
+@media screen and (max-width:516px) {
+    .plans{
+        font-size: 5.5vw;
+    }
+}
+@media screen and (max-width:430px) {
+    .plans{
+        font-size: 5.4vw;
+    }
+}
+@media screen and (max-width:435px) {
+    .plans{
+        font-size: 5.2vw;
+    }
+}
+@media screen and (max-width:350px) {
+    .plans{
+        font-size: 5.0vw;
+    }
+}

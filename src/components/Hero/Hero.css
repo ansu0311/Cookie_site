@@ -1,0 +1,79 @@
+:root{}
+@font-face {
+    font-family: 'AMORIA Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('AMORIA Regular'), url('../../font/AMORIA-BF64a2f6809ce9e.woff') format('woff');
+    }
+.hero{
+    display: flex;
+    flex-direction: column;
+}
+.image_cont{
+    padding: 0%;
+    margin: 0%;
+}
+.total_image{
+    width: 100vw;
+    height: auto;
+}/* 
+.text_box{
+    display: flex;
+    flex-direction: column;
+}
+.welcome_text{
+    display: flex;
+    justify-content: center;
+    padding-top: 5vh;
+    z-index: 2;
+}
+.hero_center_text{
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    line-height: 95.7%;
+    font-size: 14.6vw;
+}
+.small_hero_text{
+    font-size: 9vw;
+    line-height: 70%;
+}
+.and_text{
+    font-family: 'AMORIA Regular';
+    font-size: 25vw;
+    line-height: 94%;
+}
+.image_layout{
+    width: 100vw;
+    height: auto;
+}
+.half_circle{
+    z-index: 0;
+    display: flex;
+    align-self: center;
+    width: 67vw;
+    margin-top: -11vw;
+}
+.cookie_box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cookie_bucket{
+    z-index: 2;
+    width: 70vw;
+    margin-top: -32vw;
+}
+.front_tape{
+    z-index: 3;
+    margin-top: -15vw;
+}
+.back_tape{
+    z-index: 1;
+    margin-top: -25vw;
+}
+.stamp_image{
+    z-index: 4;
+    margin-left: 75vw;
+    margin-top: -35vw;
+} */
+

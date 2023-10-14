@@ -1,0 +1,138 @@
+:root{
+    /*Padding change*/
+
+
+    /*Gap change*/
+    --gap-l-laptop:3vw;
+
+    /*Size change*/
+    --size-l-laptop-header:2.8vw;
+}
+.whole{
+    display: flex;
+    flex-direction: column;
+}
+.placekeeper{
+    top: 0px;
+    left: 0px;
+    height: 5vw;
+    width: 100vw;
+}
+.header{
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    padding: 1.5vw;
+    position:fixed;
+    background-image: linear-gradient(180deg, #11131be5,#11131b00);
+    z-index: 10;
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+}
+.cookie_logo{
+    width: var(--size-l-laptop-header);
+    height: var(--size-l-laptop-header);
+    padding-right: 0.3rem;
+}
+.logo{
+    width: 8.5vw;
+    height: auto;
+    margin: 0 0 -0.3rem 0;
+}
+.bag_logo{
+    width: var(--size-l-laptop-header);
+    height: var(--size-l-laptop-header);
+    padding-right: 1rem;
+}
+.profile_logo{
+    width: var(--size-l-laptop-header);
+    height: var(--size-l-laptop-header);
+    padding-right: 3vw;
+}
+.logo_group{
+    float: left;
+}
+.profile_cart_group{
+    float: right;
+}
+.header-menu{
+    float: none;
+    position: fixed;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+    font-size: 1.8vw;
+    display: flex;
+    gap: var(--gap-l-laptop);
+    color: white;
+}
+.header-menu>li:hover{
+    color: var(--highlight_blue);
+    cursor: pointer;
+}
+@media screen and (max-width:426px) {
+    .header > :nth-child(2){
+        position: fixed;
+        right: 6vw;
+        z-index: 99;
+    }
+    .header-menu{
+        display: flex;
+        position: static;
+        color: white;
+        flex-direction: column;
+        background-color:#11131be8;
+        padding: 5vw;
+        text-align: center;
+        float: none;
+        left: 0%;
+        transform: none;
+        list-style: none;
+        font-size: 1.8vw;
+    }
+    .placekeeper{
+        top: 0px;
+        left: 0px;
+        height: 8vw;
+        width: 100vw;
+    }
+    .header{
+        margin: 0%;
+        padding: 1.5vw;
+        position:fixed;        
+        backdrop-filter: blur(8px);
+        background-color: #11131be8;
+        z-index: 10;
+        overflow: visible;
+    }
+    .cookie_logo{
+        width: var(--size-l-laptop-header);
+        height: var(--size-l-laptop-header);
+        padding-right: 0.3rem;
+    }
+    .logo{
+        width: 8.5vw;
+        height: auto;
+        margin: 0 0 -0.3rem 0;
+    }
+    .bag_logo{
+        width: var(--size-l-laptop-header);
+        height: var(--size-l-laptop-header);
+        padding-right: 1rem;
+    }
+    .profile_logo{
+        width: var(--size-l-laptop-header);
+        height: var(--size-l-laptop-header);
+        padding-right: 3vw;
+    }
+    .logo_group{
+        float: left;
+    }
+    .profile_cart_group{
+        float: right;
+    }
+    .header-menu>li:hover{
+        color: var(--highlight_blue);
+        cursor: pointer;
+    }
+}
