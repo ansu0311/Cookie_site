@@ -2,6 +2,7 @@ import React from 'react'
 import './Bestselling.css'
 import {bestSellingData} from '../../data/bestSellingData'
 import right_arrow from '../../assets2/right-arrow.png'
+import { Link } from "react-router-dom";
 
 const Bestselling = () => {
   return (
