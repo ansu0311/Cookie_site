@@ -110,7 +110,7 @@
 }
 @media screen and (max-width:426px) {
     .cart-header{
-        height: 40vw;
+        height: 70vw;
         font-size: 5.5vw;
     }
     .cart-categories{
