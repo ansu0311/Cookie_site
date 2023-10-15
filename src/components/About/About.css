@@ -49,8 +49,7 @@
 .brand{
     color: var(--highlight_blue);
 }
-.egg_logo{
-    width: var(--size-l-laptop);
+.egg_logo{width: var(--size-l-laptop);
     height: var(--size-l-laptop);
     vertical-align: middle;
     margin-top: -0.5vw;

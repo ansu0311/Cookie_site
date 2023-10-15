@@ -1,6 +1,6 @@
 import React from 'react'
 import './About.css'
-import Cookie from '../../assets2/cookie.png';
+import eggFree from '../../assets2/eggFree.png';
 
 const About = () => {
   return (
@@ -8,7 +8,7 @@ const About = () => {
         <div className="plans">
         Enjoy egg free &nbsp;
         <div className='plans_span'>
-          <img src={Cookie} alt="Egg Logo" className='egg_logo'/>
+          <img src={eggFree} alt="Egg Logo" className='egg_logo'/>
         </div>
         &nbsp;cookie perfection with&nbsp;<span className='brand'>Dohful</span>! &nbsp;
         <div className='plans_img'>satisfy</div>

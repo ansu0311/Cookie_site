@@ -68,8 +68,8 @@
     object-fit: contain;
     width: 35%;
 }
-.category:hover{
-    background: var(--planCard);
+.circle_button:hover{
+    background: var(--circle_color-select);
     cursor: pointer;
 }
 @media screen and (max-width:426px) {
@@ -114,9 +114,5 @@
     .circle_button img{
         object-fit: contain;
         width: 35%;
-    }
-    .category:hover{
-        background: var(--planCard);
-        cursor: pointer;
     }
 }

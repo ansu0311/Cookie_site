@@ -6,7 +6,7 @@ const Feedback = () => {
     return (
         <div className="flex-column testimonials " id="Feedback">
             <div className="testimonials-header">
-            Feedbacks From Our Community
+            Feedbacks
             </div>
             <div className="testimonials-categories">
                 {testimonialsData.map((program)=>(
@@ -16,7 +16,6 @@ const Feedback = () => {
                         <div className='Cookie_testimonials'>{program.heading}</div>
                       </div>
                       <div className=' flex-row review_star'>
-                        <div className='star'>{" -"+program.name}</div>
                         <div className='star right'>{" -"+program.name}</div>
                       </div>
                       <div>

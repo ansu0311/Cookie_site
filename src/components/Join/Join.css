@@ -62,19 +62,19 @@
 }
 @media screen and (max-width:426px) {
     .Join_heading{
-        font-size: 3vw;
+        font-size: 4vw;
     }
     .join_discription{
         width: 70vw;
-        font-size: 2vw;
+        font-size: 3vw;
     }
     .email-container{
         padding: 0 0 0 1vw ;
     }
     .email-container>input{
-        font-size: 2vw;
+        font-size: 3vw;
     }
     .btn-j{
-        font-size: 2vw;
+        font-size: 3vw;
     }
 }

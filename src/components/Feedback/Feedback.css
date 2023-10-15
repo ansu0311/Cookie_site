@@ -54,25 +54,28 @@
     opacity: 80%;
     margin: 0 0 0 var(--margin_value);
     line-height: 120%;
+    font-family: 'Lorem Ipsum', sans-serif;
 }
 .review_star{
-    justify-content: space-between;
+    justify-content: right;
     align-items: center;
 }
 .star{
     color: var(--highlight_blue);
     font-size: 1.3vw;
     font-weight: 300;
-    letter-spacing: 110%;
     margin-left: var(--margin_value);
+    
 }
 .right{
     margin-right: var(--margin_value);
+    font-family: 'Lorem Ipsum', sans-serif;
 }
 .description_testimonials{
     margin: 0.8vw var(--margin_value) 1.6vw var(--margin_value) ;
     font-size: 1.2vw;
     font-weight: 200;
+    font-family: 'Lorem Ipsum', sans-serif;
 }
 .testimonials1:hover{
     background: var(--planCard);
