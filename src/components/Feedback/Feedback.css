@@ -1,6 +1,6 @@
 :root{
     --margin_value:1.5vw;
-    --image-size-test:5vw;
+    --image-size-test:3vw;
 }
 .flex-column{
     display: flex;
@@ -12,29 +12,30 @@
     align-items: center;
 }
 .testimonials{
-    margin: 5vw 0 5vw 0;
     align-items: center;
 }
 .testimonials-header{
     font-size: 3.5vw;
-    margin-bottom: 5vw;
+    font-family: 'Cookie', cursive;
+    margin: 2vw 0 0.5vw 0;
     text-align: center;
     color: var(--highlight_blue);
 }
 .testimonials-categories{
     display: flex;
-    width: 90vw;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 70vw;
+    justify-content: space-around;
 }
 .testimonials1{
-    max-width: 29vw;
-    margin: 0.8vw;
+    max-width: 21vw;
+    margin: 1vw;
     background-color: var(--background_color);
     z-index: 0;
-    border-radius: 1.5vw;
+    border-radius: 1.5rem;
 }
 .review_heading{
-    margin: var(--margin_value) 0 var(--margin_value) 0;
+    margin: var(--margin_value) 0 0 0;
     width: 94%;
 }
 .testimonials1 img{
@@ -45,16 +46,15 @@
     height: var(--image-size-test);
     border-radius: 100%;
     margin-left: 2vw;
-    filter: drop-shadow(0px 14px 13px #121212)
+    filter: drop-shadow(0px 5px 6px #121212)
 }
 .Cookie_testimonials{
     width: 70%;
-    font-size: 1.2vw;
-    font-weight: 700;
+    font-size: 0.8vw;
+    font-weight: 400;
     opacity: 80%;
     margin: 0 0 0 var(--margin_value);
     line-height: 120%;
-    font-family: 'Lorem Ipsum', sans-serif;
 }
 .review_star{
     justify-content: right;
@@ -62,20 +62,18 @@
 }
 .star{
     color: var(--highlight_blue);
-    font-size: 1.3vw;
+    font-size: 0.8vw;
     font-weight: 300;
     margin-left: var(--margin_value);
-    
+    font-family: 'Lorem Ipsum', sans-serif;
 }
 .right{
     margin-right: var(--margin_value);
-    font-family: 'Lorem Ipsum', sans-serif;
 }
 .description_testimonials{
     margin: 0.8vw var(--margin_value) 1.6vw var(--margin_value) ;
-    font-size: 1.2vw;
+    font-size: 0.8vw;
     font-weight: 200;
-    font-family: 'Lorem Ipsum', sans-serif;
 }
 .testimonials1:hover{
     background: var(--planCard);
@@ -87,37 +85,31 @@
     }
     .testimonials1{
         max-width: 28vw;
-        margin: 1vw;
+    border-radius: 0.5rem;
+    margin: 1vw;
     }
     .review_heading{
-        margin: var(--margin_value) 0 var(--margin_value) 0;
+        margin: var(--margin_value) 0 0 0;
         width: 90%;
     }
     .Cookie_testimonials{
         width: 70%;
-        font-size: 1.22vw;
-        font-weight: 600;
-    }
-    .review_star{
-        justify-content: space-between;
-        align-items: center;
+        font-size: 1vw;
+        font-weight: 400;
     }
     .star{
         color: var(--highlight_blue);
-        font-size: 1.4vw;
+        font-size: 01vw;
         font-weight: 400;
     }
-    .right{
-        margin-right: var(--margin_value);
-    }
     .description_testimonials{
-        font-size: 1.23vw;
+        font-size: 1vw;
         font-weight: 200;
     }
 }
 @media screen and (max-width:426px) {
     .testimonials-header{
-        font-size: 4.5vw;
+        font-size: 9vw;
         margin:  4vw 0 5vw 0;
     }
     .testimonials-categories{
@@ -133,16 +125,16 @@
         border-radius: 1.5vw;
     }
     .review_heading{
-        margin: var(--margin_value) 0 var(--margin_value) 0;
+        margin: var(--margin_value) 0 0 0;
         width: 94%;
     }
     .testimonials1 img{
-        width: 10vw;
-        height: 10vw;
+        width: 8vw;
+        height: 8vw;
     }
     .Cookie_testimonials{
-        font-size: 2.2vw;
-        font-weight: 600;
+        font-size: 2vw;
+        font-weight: 400;
         opacity: 70%;
         margin: 0 0 0 var(--margin_value);
     }
@@ -151,10 +143,10 @@
         font-size: 2vw;
         font-weight: 300;
         letter-spacing: 110%;
-        margin-left: var(--margin_value);
+        margin-right: var(--margin_value);
     }
     .description_testimonials{
-        font-size: 2vw;
+        font-size: 1.7vw;
         line-height: 150%;
     }
 }

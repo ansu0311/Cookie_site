@@ -5,8 +5,7 @@ import Logo from "../../assets2/full-logo-white.png";
 import Bag from "../../assets2/bag_2662503.png";
 import Profile from "../../assets2/user_3177440.png";
 import Bars from "../../assets/bars.png";
-import { Link as LinkScroll} from "react-scroll";
-import { BrowserRouter, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const mobile = window.innerWidth <= 426 ? true : false;
@@ -42,36 +41,6 @@ const Header = () => {
                 to="/"
                 className="Link_button">Home
               </Link>
-            </li>
-            <li>
-              <LinkScroll
-                onClick={() => setMenuOpened(false)}
-                to="Bestselling"
-                span={true}
-                smooth={true}
-              >
-                Bestselling
-              </LinkScroll>
-            </li>
-            <li>
-              <LinkScroll
-                onClick={() => setMenuOpened(false)}
-                to="Offers"
-                span={true}
-                smooth={true}
-              >
-                Offers
-              </LinkScroll>
-            </li>
-            <li>
-              <LinkScroll
-                onClick={() => setMenuOpened(false)}
-                to="Feedback"
-                span={true}
-                smooth={true}
-              >
-                Feedback
-              </LinkScroll>
             </li>
             <li>
               <Link

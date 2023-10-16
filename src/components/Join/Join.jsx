@@ -1,7 +1,7 @@
 import React, {useRef} from 'react'
 import './Join.css'
 import emailjs from '@emailjs/browser'
-import tape from "../../assets2/Tape and image 3.png"
+import tape from "../../assets3/end tape.png"
 
 const Join = () => {
   const form  = useRef()
@@ -28,7 +28,7 @@ const Join = () => {
           </div>
           <div>
             <form ref={form} className='email-container' onSubmit={sendEmail}>
-                <input type="email"  name='user_email' placeholder='Email'/>
+                <input type="email"  name='user_email' className='type_decor' placeholder='Email'/>
                 <button className='btn btn-j'>Join Now</button>
             </form>
           </div>

@@ -5,7 +5,8 @@ import Header from '../Header/Header'
 // import back_tape from "../../assets2/back tape.png"
 // import half_circle from "../../assets2/half_circle.png"
 // import cookie_tub from "../../assets2/kiko-camaclang-RkwpBigY0y4-unsplash 1.png"
-import total_pic from "../../assets2/Subtract.png"
+import total_pic from "../../assets3/Tape and Image small.png"
+import total_pic2 from "../../assets2/Subtract.png"
 
 const Hero = () => {
 
