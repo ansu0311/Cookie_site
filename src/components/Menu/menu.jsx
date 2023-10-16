@@ -9,18 +9,37 @@ import tape from "../../assets3/entry tape.png";
 import tape2 from "../../assets3/end tape.png";
 
 const useMenu = () => {
-  let [count, setCount] = useState(0);
+  let [menu, setmenu] = useState(menuData);
+  const [cartCourses, setCartCourses] = useState([]);
 
-  function incrementCount() {
-    count = count + 1;
-    setCount(count);
-  }
-  function decrementCount() {
-    if (count > 0) {
-      count = count - 1;
-      setCount(count);
+  const addCourseToCartFunction = (selected) => {
+    const alreadyCourses = cartCourses
+                           .find(item => item.product.heading === selected.heading);
+    if (alreadyCourses) {
+        const latestCartUpdate = cartCourses.map(item =>
+            item.product.heading === selected.heading ? { 
+            ...item, quantity: item.quantity + 1 } 
+            : item
+        );
+        setCartCourses(latestCartUpdate);
+    } else {
+        setCartCourses([...cartCourses, {product: selected, quantity: 1}]);
     }
-  }
+};
+const deleteCourseFromCartFunction = (selected) => {
+  const updatedCart = cartCourses
+                      .filter(item => item.product.heading !== selected.heading);
+  setCartCourses(updatedCart);
+};
+const totalAmountCalculationFunction = () => {
+  return cartCourses
+         .reduce((total_price, item) => total_price + item.product.selling * item.quantity, 0);
+};
+const totalQunatityCalculationFunction = () => {
+  return cartCourses
+         .reduce((total_quantity, item) => total_quantity + item.quantity, 0);
+};
+
   return (
     <div className="menu" id="Offers">
       <Header />
@@ -29,7 +48,7 @@ const useMenu = () => {
         <img src={tape} alt="Brand Tape" />
       </div>
       <div className="menu-categories">
-        {menuData.map((program) => (
+        {menu.map((program) => (
           <div className="menu_box">
             <div className="menu1">
               <img src={program.image} alt="loko" />
@@ -44,11 +63,10 @@ const useMenu = () => {
                   </div>
                   <div>
                     <div className="counter">
-                      <div className="circle_menu" onClick={decrementCount}>
+                      <div className="circle_menu" onClick={() => deleteCourseFromCartFunction(program)}>
                         <img src={minus} alt="right arrow" />
                       </div>
-                      <div className="circle_menu">{count}</div>
-                      <div className="circle_menu" onClick={incrementCount}>
+                      <div className="circle_menu" onClick={() => addCourseToCartFunction(program)}>
                         <img src={plus} alt="right arrow" />
                       </div>
                     </div>
@@ -59,7 +77,15 @@ const useMenu = () => {
           </div>
         ))}
       </div>
-      <div className="tape_join">
+        <div className=" test_box menu1">
+            <div className=" ">Total Amount: 
+                ₹{totalAmountCalculationFunction()}
+            </div>
+            <div className="">Total Qunatity: 
+                {totalQunatityCalculationFunction()}
+            </div>
+        </div>
+    <div className="tape_join">
         <img src={tape2} alt="Brand Tape" />
       </div>
       <Footer />
