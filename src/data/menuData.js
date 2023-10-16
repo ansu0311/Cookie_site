@@ -5,43 +5,31 @@ import TripleChoco from "../assets2/tripleChoco.png";
 
 export const menuData = [
   {
+    id:1,
     image: ChocoChunk,
     heading: "Choco Chunk",
-    selling: "658",
+    selling: 658,
+    bestseller:true,
   },
   {
+    id:2,
     image: Resin,
     heading: "Oatmeal Raisin",
-    selling: "578",
+    selling: 578,
+    bestseller:true,
   },
   {
+    id:3,
     image: Gingersnap,
     heading: "Ginger Snap",
-    selling: "229",
+    selling: 229,
+    bestseller:false,
   },
   {
+    id:4,
     image: TripleChoco,
     heading: "Triple Choco",
-    selling: "359",
-  },
-  {
-    image: ChocoChunk,
-    heading: "Choco Chunk",
-    selling: "658",
-  },
-  {
-    image: Resin,
-    heading: "Oatmeal Raisin",
-    selling: "578",
-  },
-  {
-    image: Gingersnap,
-    heading: "Ginger Snap",
-    selling: "229",
-  },
-  {
-    image: TripleChoco,
-    heading: "Triple Choco",
-    selling: "359",
+    selling: 359,
+    bestseller:true,
   },
 ];
