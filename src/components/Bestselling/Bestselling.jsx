@@ -2,13 +2,12 @@ import React from 'react'
 import './Bestselling.css'
 import {bestSellingData} from '../../data/bestSellingData'
 import right_arrow from '../../assets2/right-arrow.png'
-import { Link } from "react-router-dom";
 
 const Bestselling = () => {
   return (
     <div className="Programs flex-column-bestselling" id="Bestselling">
         <div className="programs-header">
-        Indulge In Our Bestselling Cookies
+        Our Bestselling Cookies
         </div>
         <div className="program-categories">
             {bestSellingData.map((program)=>(
@@ -16,7 +15,7 @@ const Bestselling = () => {
                   <img  src={program.image} alt="loko" />
                   <div className='flex-column-bestselling text_child'>
                     <div className='Cookie_heading'>{program.heading}</div>
-                    <div className='Cookie_heading for'>For</div>
+                    <div className='Cookie_heading for-best'>For</div>
                     <div className='Cookie_heading price_cookie'>{"Rs. "+program.details}</div>
                   </div>
                   <div className='flex-column-bestselling circle_button'>

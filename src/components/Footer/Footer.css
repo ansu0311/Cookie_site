@@ -9,6 +9,7 @@
 }
 .Footer-container{
     width: 100vw;
+    margin-top: 4vw;
     align-items: center;
 }
 .links_dis{
@@ -20,8 +21,8 @@
     width: 50vw;
     text-transform: capitalize;
     align-items: center;
-    font-size: 1.4vw;
-    border-right: 0.2rem solid var(--text_70);
+    font-size: 1vw;
+    border-right: 0.11vw solid var(--text_70);
 }
 .footer_link{
     color: var(--text_70);
@@ -38,17 +39,17 @@
     justify-content: left;
 }
 .heading_footer{
-    font-size: 2vw;
+    font-size: 1.5vw;
     font-weight: 500;
     text-transform: capitalize;
     color: var(--highlight_blue);
-    padding-bottom: 1rem;
+    padding-bottom: 1vw;
 }
 .description_footer{
     text-align: justify;
-    font-size: 1.3vw;
+    font-size: 1vw;
     color: var(--text_70);
-    line-height: 150%;
+    line-height: 170%;
 }
 .customIcon{
     color: white;
@@ -72,6 +73,7 @@
 @media screen and (max-width:426px){
     .Footer-container{
         width: 100vw;
+        margin-top: 4vw;
         align-items: center;
     }
     .links_dis{
@@ -82,51 +84,31 @@
     }
     .left-side{
         text-transform: capitalize;
-        font-size: 3.5vw;
+        font-size: 3vw;
+        line-height: 150%;
         border-right: 0;
-        margin-bottom: 2vw;
+        margin-bottom: 3vw;
     }
     .right-side{
-        width: 75vw;
+        width: 85vw;
     }
     .footer_text_container{
         width: 80%;
     }
     .heading_footer{
-        font-size: 4.5vw;
+        font-size: 3.5vw;
+        font-weight: 400;
         text-align: center;
         padding-bottom: 2vw;
     }
     .description_footer{
         text-align: justify;
-        font-size: 3vw;
+        font-size: 2.8vw;
         color: var(--text_70);
         line-height: 150%;
     }
-    .customIcon{
-        color: white;
-    }
-    .customIcon:hover{
-        color: var(--highlight_blue);
-    }
-    .footer{
-        flex-direction: column;
-    }
-    .footer_link{
-        color: var(--text_70);
-        padding: 0.4vw;
-    }
-    .footer_link:hover{
-        color: var(--highlight_blue);
-    }
-    .social-links{
-        margin-top: 3vw;
-        width: 30vw;
-        display: flex;
-        justify-content: space-between;
-    }
     .logo-f>img{
         margin: 3vw;
-        width: 10vw;
+        width: 15vw;
     }
 }

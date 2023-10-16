@@ -1,4 +1,4 @@
-:root{}
+
 @font-face {
     font-family: 'AMORIA Regular';
     font-style: normal;
@@ -12,11 +12,28 @@
 .image_cont{
     padding: 0%;
     margin: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .total_image{
     width: 100vw;
     height: auto;
-}/* 
+}
+@media screen and (max-width:769px) {
+    .total_image{
+        width: 120vw;
+        height: auto;
+    }
+}
+@media screen and (max-width:426px) {
+    .total_image{
+        width: 200vw;
+        height: auto;
+        margin-top: 2.5vw;
+    }
+}
+/* 
 .text_box{
     display: flex;
     flex-direction: column;
