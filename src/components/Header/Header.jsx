@@ -4,7 +4,7 @@ import Cookie from "../../assets2/cookie.png";
 import Logo from "../../assets2/full-logo-white.png";
 import Bag from "../../assets2/bag_2662503.png";
 import Profile from "../../assets2/user_3177440.png";
-import Bars from "../../assets/bars.png";
+import Bars from "../../assets2/Dropdown.png";
 import { Link } from "react-router-dom";
 
 const Header = () => {
@@ -34,17 +34,17 @@ const Header = () => {
           </div>
         ) : (
           <ul className="header-menu">
-            <li>
+            <li onClick={() => {setMenuOpened(false)}}>
               <Link
-                onClick={() => setMenuOpened(false)}
+                
                 activeClass="active"
                 to="/"
                 className="Link_button">Home
               </Link>
             </li>
-            <li>
+            <li onClick={() => {setMenuOpened(false)}}>
               <Link
-                onClick={() => setMenuOpened(false)}
+                
                 to="/menupage"
                 className="Link_button">
                 Product

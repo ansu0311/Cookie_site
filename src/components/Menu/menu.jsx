@@ -1,29 +1,14 @@
-import React, { useState } from "react";
-import "./menu.css";
+import React from "react";
+import "./Menu.css";
 import { menuData } from "../../data/menuData";
 import plus from "../../assets2/plus.png";
-import minus from "../../assets2/minus.png";
-import Header from "../Header/Header";
-import Footer from "../Footer/Footer";
 import tape from "../../assets3/entry tape.png";
 import tape2 from "../../assets3/end tape.png";
 
 const useMenu = () => {
-  let [count, setCount] = useState(0);
 
-  function incrementCount() {
-    count = count + 1;
-    setCount(count);
-  }
-  function decrementCount() {
-    if (count > 0) {
-      count = count - 1;
-      setCount(count);
-    }
-  }
   return (
     <div className="menu" id="Offers">
-      <Header />
       <div className="menu-header">Our Signature Cookie Assortment</div>
       <div className="tape_join">
         <img src={tape} alt="Brand Tape" />
@@ -44,11 +29,7 @@ const useMenu = () => {
                   </div>
                   <div>
                     <div className="counter">
-                      <div className="circle_menu" onClick={decrementCount}>
-                        <img src={minus} alt="right arrow" />
-                      </div>
-                      <div className="circle_menu">{count}</div>
-                      <div className="circle_menu" onClick={incrementCount}>
+                      <div className="circle_menu">
                         <img src={plus} alt="right arrow" />
                       </div>
                     </div>
@@ -62,7 +43,6 @@ const useMenu = () => {
       <div className="tape_join">
         <img src={tape2} alt="Brand Tape" />
       </div>
-      <Footer />
     </div>
   );
 };

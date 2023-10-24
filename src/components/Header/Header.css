@@ -1,6 +1,6 @@
 :root{
     --gap-l-laptop:3vw;
-    --size-l-laptop-header:1.6vw;
+    --size-l-laptop-header:1.8vw;
     --size-m-laptop-header:2vw;
     --size-s-laptop-header:5.5vw;
     --size-ss-laptop-header:5.5vw;
@@ -13,8 +13,9 @@
 .placekeeper{
     top: 0px;
     left: 0px;
-    height: 4vw;
+    height: 3.5vw;
     width: 100vw;
+    background-color: var(--appColor);
 }
 .header{
     top: 0px;
@@ -33,7 +34,7 @@
     padding-right: 0.3rem;
 }
 .logo{
-    width: 4.5vw;
+    width: 5vw;
     height: auto;
     margin: 0 0 -0.3vw 0;
 }
@@ -87,10 +88,7 @@
 .Link_button:hover{
     text-decoration: none;
     color: var(--highlight_blue);
-    cursor: pointer;
-}
-.header-menu>li:hover{
-    color: var(--highlight_blue);
+    transition: 0.3s;
     cursor: pointer;
 }
 @media screen and (max-width:1025px) {
@@ -145,7 +143,7 @@
         z-index: 99;
     }
     .header{
-        margin-top: 2vw;
+        padding-top: 2vw;
     }
     .header-menu{
         display: flex;

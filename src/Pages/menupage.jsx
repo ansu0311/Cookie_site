@@ -1,5 +1,5 @@
 import React from 'react'
-import Menu from '../components/Menu/menu';
+import Menu from '../components/Menu/Menu';
 import '../App.css';
 
 

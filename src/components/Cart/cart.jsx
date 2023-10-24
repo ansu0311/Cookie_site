@@ -1,8 +1,6 @@
 import React from "react";
-import "./cart.css";
+import "./Cart.css";
 import { cartData } from "../../data/cartData";
-import Header from "../Header/Header";
-import Footer from "../Footer/Footer";
 import tape from "../../assets3/entry tape.png";
 import tape2 from "../../assets3/end tape.png";
 
@@ -16,7 +14,6 @@ const useCart = () => {
   });
   return (
     <div className="cart" id="Offers">
-      <Header />
       <div className="cart-header">Thank You for the purchase</div>
       <div className="tape_join">
         <img src={tape} alt="Brand Tape" />
@@ -61,7 +58,6 @@ const useCart = () => {
       <div className="tape_join">
         <img src={tape2} alt="Brand Tape" />
       </div>
-      <Footer />
     </div>
   );
 };

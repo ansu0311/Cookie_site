@@ -11,7 +11,7 @@
   --textColor: #ffffff;
 }
 
-.App {
+.App{
   background-color: var(--appColor);
   color: var(--textColor);
   display: flex;
