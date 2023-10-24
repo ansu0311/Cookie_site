@@ -6,7 +6,6 @@ import tape from "../../assets3/entry tape.png";
 import tape2 from "../../assets3/end tape.png";
 
 const useMenu = () => {
-
   return (
     <div className="menu" id="Offers">
       <div className="menu-header">Our Signature Cookie Assortment</div>
@@ -14,7 +13,7 @@ const useMenu = () => {
         <img src={tape} alt="Brand Tape" />
       </div>
       <div className="menu-categories">
-        {menuData.map((program) => (
+        {menu.map((program) => (
           <div className="menu_box">
             <div className="menu1">
               <img src={program.image} alt="loko" />
@@ -28,9 +27,6 @@ const useMenu = () => {
                     </div>
                   </div>
                   <div>
-                    <div className="counter">
-                      <div className="circle_menu">
-                        <img src={plus} alt="right arrow" />
                       </div>
                     </div>
                   </div>
@@ -40,7 +36,8 @@ const useMenu = () => {
           </div>
         ))}
       </div>
-      <div className="tape_join">
+        
+    <div className="tape_join">
         <img src={tape2} alt="Brand Tape" />
       </div>
     </div>
