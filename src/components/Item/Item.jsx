@@ -1,6 +1,8 @@
 import React from "react";
 import "./Item.css";
-import right_arrow from '../../assets2/right-arrow.png'
+import right_arrow from "../../assets2/right-arrow.png";
+import { Link } from "react-router-dom";
+
 const Item = (props) => {
   return (
     <div>
@@ -13,9 +15,16 @@ const Item = (props) => {
             {"Rs. " + props.selling}
           </div>
         </div>
-        <div className="flex-column-bestselling circle_button">
-          <img src={right_arrow} className="custom_button" alt="right arrow" />
-        </div>
+        <Link to={`/product/${props.id}`}>
+          <div className="flex-column-bestselling circle_button" >
+            <img
+              src={right_arrow}
+              className="custom_button"
+              alt="right arrow"
+              onClick={window.scrollTo(0,0)}
+            />
+          </div>
+        </Link>
       </div>
     </div>
   );

@@ -76,10 +76,12 @@
     left: 47%;
     transform: translate(-50%, -50%);
     list-style: none;
-    font-size: 1.2vw;
+    font-size: 1.1vw;
+    font-weight: 700;
     display: flex;
     gap: var(--gap-l-laptop);
     color: white;
+    text-transform: uppercase;
 }
 .Link_button{
     text-decoration: none;

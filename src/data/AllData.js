@@ -7,7 +7,7 @@ import Caramel from "../assets2/Caramel.png";
 import ChocoLava from "../assets2/ChocoLava.png";
 import RedVelvet from "../assets2/RedVelvet.png";
 
-let allData = [
+let all_product = [
   {
     id:1,
     image: ChocoChunk,
@@ -74,4 +74,4 @@ let allData = [
   },
 ];
 
-export default allData;
+export default all_product;
