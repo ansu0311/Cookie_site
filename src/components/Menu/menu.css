@@ -4,7 +4,6 @@
   --image-size-menu: 6.5vw;
   --image-size-menu-big: 15vw;
 }
-
 .menu {
   margin: 1vw;
   display: flex;
@@ -106,15 +105,6 @@
 .circle_menu:hover {
   background: var(--circle_color-select);
   cursor: pointer;
-}
-.test_box{
-  display: flex;
-  flex-direction: column;
-  font-size: 1.5vw;
-  margin: 0vw;
-  width: 15vw;
-  height: 6vw;
-  justify-content: center;
 }
 @media screen and (max-width: 1024px) {
   .tape_join img {

@@ -2,7 +2,6 @@ import React from 'react';
 import './Footer.css';
 import Logo from '../../assets2/full-logo-white.png';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import LinkedIn from '../../assets/linkedin.png';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';

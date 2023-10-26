@@ -1,0 +1,16 @@
+.breadcrum{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1vw;
+    font-weight: 400;
+    margin: 3vw 12vw;
+    text-transform: uppercase;
+}
+.Link_button{
+    text-decoration: none;
+    color: #888888;
+}
+.breadcrum span{
+    color: var(--highlight_blue);
+}

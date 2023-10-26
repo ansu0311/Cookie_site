@@ -1,0 +1,73 @@
+.menu {
+  margin: 1vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tape_join img {
+  width: 110vw;
+  height: auto;
+  padding: 0;
+}
+.menu-header {
+  width: 100vw;
+  height: 12vw;
+  font-size: 4.5vw;
+  font-family: "Cookie", cursive;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu-categories {
+  display: flex;
+  width: 70vw;
+  margin: 2vw 0 2vw 0;
+  justify-content: space-evenly;
+  display: flex;
+  flex-wrap: wrap;
+}
+.all-products {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 65vw;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+@media screen and (max-width: 1024px) {
+  .tape_join img {
+    width: 120vw;
+  }
+  .menu-header {
+    height: 11vw;
+    font-size: 4.1vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  .tape_join img {
+    width: 130vw;
+  }
+  .menu-header {
+    height: 11vw;
+    font-size: 4.1vw;
+  }
+}
+@media screen and (max-width: 426px) {
+  .tape_join img {
+    width: 200vw;
+  }
+  .menu-header {
+    height: 25vw;
+    font-size: 7vw;
+  }
+  .menu-categories {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

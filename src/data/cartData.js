@@ -1,7 +1,6 @@
 import ChocoChunk from "../assets2/Chocochunk.png";
 import Resin from "../assets2/Resin.png";
 import Gingersnap from "../assets2/gingerSnap.png";
-import TripleChoco from "../assets2/tripleChoco.png";
 
 export const cartData = [
     {
