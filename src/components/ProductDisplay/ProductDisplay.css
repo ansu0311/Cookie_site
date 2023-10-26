@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 5vw;
+    margin-top: 1vw;
 }
 .productdisplay-center{
     display: flex;
@@ -17,7 +17,7 @@
 }
 .productdisplay-right{
     padding-left: 10vw;
-    width: 50%;
+    width: 60%;
     justify-content: center;
     display: flex;
     flex-direction: column;
@@ -31,7 +31,7 @@
 .productdisplay-right-prices{
     display: flex;
     margin-top: 1vw;
-    font-size: 24px;
+    font-size:1.8vw;
     font-weight: 700;
     color: var(--highlight_blue);
 }
@@ -39,28 +39,11 @@
     margin: 0.5vw 0 3vw 0;
     color: var(--text_70);
     font-size: 1.2vw;
-}
-.productdisplay-right-size h1{
-    margin-top: 01vw;
-    color: var(--text_70);
-    font-size: 20px;
-    font-weight: 600;
-}
-.productdisplay-right-sizes{
-    display: flex;
-    margin: 30px 0px;
-    gap: 20px;
-}
-.productdisplay-right-sizes div{
-    padding: 18px 24px;
-    background: #fbfbfb;
-    border: 1px solid #ebebeb;
-    border-radius: 3px;
-    cursor: pointer;
+    text-align: justify;
 }
 .productdisplay-right button{
-    padding: 20px 40px;
-    width: 200px;
+    padding: 1.6vw 3vw;
+    margin-right: 0.7vw;
     font-size: 16px;
     font-weight: 600;
     color: var(--highlight_blue);
@@ -79,4 +62,10 @@
     height: 50px;
     border: 2px solid #ebebeb;
     background: #fff;
+  }
+  .button_holder{
+    display: flex;
+  }
+  .button_holder img{
+    width: 1vw;
   }

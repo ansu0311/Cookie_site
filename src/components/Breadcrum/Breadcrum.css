@@ -12,5 +12,6 @@
     color: #888888;
 }
 .breadcrum span{
+    font-size: 1vw;
     color: var(--highlight_blue);
 }

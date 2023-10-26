@@ -1,10 +1,13 @@
 import React, { useContext } from "react";
 import "../../components/ProductDisplay/ProductDisplay.css";
 import { ShopContext } from "../../Context/ShopContext";
+//import remove_icon from "../../assets2/minus.png";
+//import add_icon from "../../assets2/plus.png";
 
 const ProductDisplay = (props) => {
   const { product } = props;
-  const { addToCart , cartItems } = useContext(ShopContext);
+  // const { addToCart , cartItems , removeFromCart } = useContext(ShopContext);
+  const { addToCart } = useContext(ShopContext);
 
   return (
     <div className="productContainer">
@@ -24,18 +27,20 @@ const ProductDisplay = (props) => {
               Rs. {product.selling}
           </div>
           <div className="productdisplay-right-description">
-            product descripion
+          {product.discription}
           </div>
-          <button className="cartitems-quantity">
-                  {cartItems[product.id]}
-                </button>
-          <button
-            onClick={() => {
-              addToCart(product.id);
-            }}
-          >
-            ADD TO CART
-          </button>
+                <div className="button_holder">
+          <button onClick={() => { addToCart(product.id);}}>
+            ADD TO CART</button>
+            {/* <div className="button_holder">
+            <button onClick={() => { removeFromCart(product.id);}} hidden={cartItems[product.id]>0?"none":"hidden"}>
+            <img src={remove_icon} alt="" /></button>
+          <button hidden={cartItems[product.id]>0?"":"hidden"}>
+                  {cartItems[product.id]}</button>
+            <button onClick={() => { addToCart(product.id);}} hidden={cartItems[product.id]>0?"none":"hidden"}>
+            <img src={add_icon} alt="" /></button>
+            </div> */}
+          </div>
         </div>
       </div>
     </div>
