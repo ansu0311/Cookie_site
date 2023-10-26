@@ -16,12 +16,11 @@ const Item = (props) => {
           </div>
         </div>
         <Link to={`/product/${props.id}`}>
-          <div className="flex-column-bestselling circle_button" >
+          <div className="flex-column-bestselling circle_button">
             <img
               src={right_arrow}
               className="custom_button"
               alt="right arrow"
-              onClick={window.scrollTo(0,0)}
             />
           </div>
         </Link>
