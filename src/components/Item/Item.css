@@ -3,14 +3,14 @@
   }
   .category1 img {
     z-index: 3;
-    width: 8vw;
+    width: 9vw;
     filter: drop-shadow(0px 14px 13px #121212);
   }
   .text_child {
     z-index: 0;
     background-color: var(--background_color);
     margin-top: -3vw;
-    width: 13vw;
+    width: 12.5vw;
     height: 14vw;
     border-radius: 1vw 1vw 6vw 1vw;
     align-items: normal;
@@ -39,8 +39,10 @@
     background-color: var(--circle_color);
     flex-direction: row;
     justify-content: center;
-    margin: -4vw -10vw 0 0;
     filter: drop-shadow(-3px -3px 10px var(--shadow_color));
+  }
+  .circle_position{
+    margin: -3.5vw -9.5vw 0 0;
   }
   .circle_button img {
     object-fit: contain;

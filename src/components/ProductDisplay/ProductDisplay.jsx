@@ -1,13 +1,12 @@
 import React, { useContext } from "react";
 import "../../components/ProductDisplay/ProductDisplay.css";
 import { ShopContext } from "../../Context/ShopContext";
-//import remove_icon from "../../assets2/minus.png";
-//import add_icon from "../../assets2/plus.png";
+import remove_icon from "../../assets2/minus.png";
+import add_icon from "../../assets2/plus.png";
 
 const ProductDisplay = (props) => {
   const { product } = props;
-  // const { addToCart , cartItems , removeFromCart } = useContext(ShopContext);
-  const { addToCart } = useContext(ShopContext);
+  const { addToCart , cartItems , removeFromCart } = useContext(ShopContext);
 
   return (
     <div className="productContainer">
@@ -30,16 +29,16 @@ const ProductDisplay = (props) => {
           {product.discription}
           </div>
                 <div className="button_holder">
-          <button onClick={() => { addToCart(product.id);}}>
+          <button onClick={() => { addToCart(product.id);}} hidden={cartItems[product.id]>0?"hidden":""}>
             ADD TO CART</button>
-            {/* <div className="button_holder">
-            <button onClick={() => { removeFromCart(product.id);}} hidden={cartItems[product.id]>0?"none":"hidden"}>
-            <img src={remove_icon} alt="" /></button>
-          <button hidden={cartItems[product.id]>0?"":"hidden"}>
-                  {cartItems[product.id]}</button>
-            <button onClick={() => { addToCart(product.id);}} hidden={cartItems[product.id]>0?"none":"hidden"}>
-            <img src={add_icon} alt="" /></button>
-            </div> */}
+            <div className="button_series">
+            <button onClick={() => { removeFromCart(product.id);}} hidden={cartItems[product.id]>0?"":"hidden"}>
+              <img src={remove_icon} alt="" /></button>
+              <button hidden={cartItems[product.id]>0?"":"hidden"}>
+                {cartItems[product.id]}</button>
+              <button onClick={() => { addToCart(product.id);}} hidden={cartItems[product.id]>0?"":"hidden"}>
+                <img src={add_icon} alt="" /></button>
+            </div>
           </div>
         </div>
       </div>

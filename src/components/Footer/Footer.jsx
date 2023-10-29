@@ -5,6 +5,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import { Link } from 'react-router-dom';
 
 
 const Footer = () => {
@@ -35,8 +36,8 @@ const Footer = () => {
       </div>
         <div className=" flex-column-footer footer">
             <div className="social-links">
-                <GitHubIcon style={{fontSize: '3.4vw'}} className='customIcon' />
-                <LinkedInIcon style={{fontSize: '3.4vw'}} className='customIcon' />
+                <Link to="https://github.com/ansu0311"><GitHubIcon style={{fontSize: '3.4vw'}} className='customIcon' /></Link>
+                <Link to="https://www.linkedin.com/in/ansumannayak03/"><LinkedInIcon style={{fontSize: '3.4vw'}} className='customIcon' /></Link>
                 <FacebookIcon style={{fontSize: '3.4vw'}} className='customIcon' />
                 <InstagramIcon style={{fontSize: '3.4vw'}} className='customIcon' />
             </div>

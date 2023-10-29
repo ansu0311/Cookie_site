@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Item.css";
 import right_arrow from "../../assets2/right-arrow.png";
 import { Link } from "react-router-dom";
 
 const Item = (props) => {
+
+  useEffect(() => {
+    window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+  }, []);
+
   return (
     <div>
       <div className="flex-column-bestselling category1">
@@ -15,8 +20,8 @@ const Item = (props) => {
             {"Rs. " + props.selling}
           </div>
         </div>
-        <Link to={`/product/${props.id}`}>
-          <div className="flex-column-bestselling circle_button">
+        <Link to={`/product/${props.id}`} className="circle_position">
+          <div className="flex-column-bestselling circle_button" onClick={() => { window.scrollTo({top: 0, left: 0, behavior: 'smooth'}); }} >
             <img
               src={right_arrow}
               className="custom_button"

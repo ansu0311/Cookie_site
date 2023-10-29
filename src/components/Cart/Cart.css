@@ -81,11 +81,14 @@ span {
   margin: 0.5vw;
   color: var(--highlight_blue);
 }
-.cartitems-total-item p {
-  margin: 0.7vw 0 0.7vw 0;
+.cartitems-total-item {
+  margin: 0;
+}
+.cartitems-total-item h3{
+  font-size: 1.4vw;
 }
 .cartitems-total-item h3 > span {
-  font-size: 1.75vw;
+  font-size: 1.7vw;
   letter-spacing: 0.07vw;
 }
 .cart_checkout {

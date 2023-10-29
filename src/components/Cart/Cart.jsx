@@ -3,8 +3,23 @@ import "./Cart.css";
 import { ShopContext } from "../../Context/ShopContext";
 import remove_icon from "../../assets2/minus.png";
 import add_icon from "../../assets2/plus.png";
+import { useState } from "react";
 
 const Cart = () => {
+
+  const [discount,setDiscount] = useState(false)
+  const [promoCode,setPromoCode] = useState("")
+
+  const handleInput = () => {
+    let text = promoCode.toUpperCase()
+    console.log(text)
+    if ((text === "KUNU") || (text === "SENPO")) {
+      setDiscount(true)
+    } else {
+      setDiscount(false)
+    }
+  };
+
   const {
     all_product,
     cartItems,
@@ -43,10 +58,14 @@ const Cart = () => {
 
   let subtotal = getTotalCartAmount();
 
-  const TotalBill = (subtotal) => {
+  const TotalBill = (subtotal,promo,disco) => {
     if (subtotal >= 1000) {
       return subtotal;
-    } else {
+    }
+    else if (disco && ((promo === "KUNU") || (promo === "SENPO"))){
+      return 0;
+    }
+     else {
       return subtotal + 199;
     }
   };
@@ -124,20 +143,24 @@ const Cart = () => {
                   <p>Shopping Fee</p>
                   <p>{subtotal > 1000 ? "Free" : 199}</p>
                 </div>
+                { discount && (<div className="cartitems-total-item">
+                  <p>Promo Code</p>
+                  <p>{promoCode.toUpperCase()}</p>
+                </div>)}
                 <hr />
                 <div className="cartitems-total-item">
                   <h3>Total</h3>
                   <h3>
                     Rs.{" "}
-                    <span className="fontchange">{TotalBill(subtotal)}</span>
+                    <span className="fontchange">{TotalBill(subtotal,promoCode.toUpperCase(),discount)}</span>
                   </h3>
                 </div>
               </div>
             </div>
             <div className="cart_checkout">
               <div className="cartitems-promobox">
-                <input type="text" placeholder="promo code" />
-                <button className="cartitems_button">Submit</button>
+                <input type="text" placeholder="promo code" onChange={e=>setPromoCode(e.target.value)}/>
+                <button className="cartitems_button" onClick={() => handleInput()}>Submit</button>
               </div>
               <button className="cart_checkout_button">
                 PROCEED TO CHECKOUT

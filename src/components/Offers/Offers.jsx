@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext , useEffect } from "react";
 import "./Offers.css";
 import right_arrow from "../../assets2/right-arrow.png";
 import { Link } from "react-router-dom";
@@ -6,6 +6,10 @@ import { ShopContext } from "../../Context/ShopContext";
 
 const Reasons = (props) => {
   const { all_product } = useContext(ShopContext);
+  
+  useEffect(() => {
+    window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+  }, []);
 
   return (
     <div className="Reasons" id="Offers">
@@ -32,7 +36,7 @@ const Reasons = (props) => {
                 </div>
           <Link to={`/product/${item.id}`}>
 
-                <div className="Reasons circle_reason">
+                <div className="Reasons circle_reason" onClick={() => { window.scrollTo({top: 0, left: 0, behavior: 'smooth'});}}>
 
                   <img src={right_arrow} alt="right arrow" />
 
