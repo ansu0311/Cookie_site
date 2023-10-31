@@ -99,7 +99,7 @@ const Cart = () => {
                     <p>{e.heading}</p>
                     <p className="fontchange">{e.selling}</p>
                     <p className="fontchange">{cartItems[e.id]}</p>
-                    <p>{Money(cartItems[e.id], e.selling, e.offer)}</p>
+                    <p className="fontchange2">{Money(cartItems[e.id], e.selling, e.offer)}</p>
                     <p>
                       <div className="buttons_cont">
                         <img
@@ -141,7 +141,7 @@ const Cart = () => {
                 </div>
                 <div className="cartitems-total-item">
                   <p>Shopping Fee</p>
-                  <p>{subtotal > 1000 ? "Free" : 199}</p>
+                  <p className="fontchange">{subtotal > 1000 ? "Free" :`199`}</p>
                 </div>
                 { discount && (<div className="cartitems-total-item">
                   <p>Promo Code</p>
