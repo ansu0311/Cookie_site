@@ -38,7 +38,7 @@ const Header = () => {
             }}
             onClick={() => setMenuOpened(true)}
           >
-            <img src={Bars} alt="" style={{ width: "3vw", height: "3vw" }} />
+            <img src={Bars} alt="" className="bar_logo" />
           </div>
         ) : (
           <ul className="header-menu">

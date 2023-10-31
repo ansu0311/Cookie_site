@@ -2,6 +2,7 @@
     --gap-l-laptop:3vw;
     --size-l-laptop-header:1.8vw;
     --size-m-laptop-header:2vw;
+    --size-sm-laptop-header:2.5vw;
     --size-s-laptop-header:5.5vw;
     --size-ss-laptop-header:5.5vw;
     --cart-value-size-l:1vw;
@@ -94,6 +95,9 @@
     cursor: pointer;
 }
 @media screen and (max-width:1025px) {
+    .placekeeper{
+    height: 4vw;
+}
     .header-menu{
         font-size: 1.4vw;
     }
@@ -120,11 +124,32 @@
     }
 }
 @media screen and (max-width:769px) {
+    .placekeeper{
+    height: 5vw;
+}
     .cart_value{
-        margin: 0 1vw 0 -3vw;
-    }
+    width: 1.5vw;
+    height: 1.5vw;
+    margin: 0 1vw 0 -3vw;
+    font-size: 1.2vw;
+}
     .logo{
-        width: 5vw;
+        width: 7vw;
+    }
+     .cookie_logo{
+        width: var(--size-sm-laptop-header);
+        height: var(--size-sm-laptop-header);
+        padding-right: 0.1rem;
+    }
+    .bag_logo{
+        width: var(--size-sm-laptop-header);
+        height: var(--size-sm-laptop-header);
+        padding-right: 1rem;
+    }
+    .profile_logo{
+        width: var(--size-sm-laptop-header);
+        height: var(--size-sm-laptop-header);
+        padding-right: 3vw;
     }
 }
 @media screen and (max-width:635px) {
@@ -140,7 +165,7 @@
 @media screen and (max-width:426px) {
     .header > :nth-child(2){
         position: fixed;
-        top: 2vw;
+        top: 3vw;
         right: 19vw;
         z-index: 99;
     }
@@ -183,6 +208,17 @@
     .logo{
         width: 16vw;
     }
+    .bar_logo{
+         width: var(--size-s-laptop-header);
+        height: var(--size-s-laptop-header);
+        margin: -1vw 1vw 0 0;
+    }
+    .cart_value{
+    width: 4vw;
+    height: 4vw;
+    margin-left: -5vw ;
+    font-size: 3vw;
+}
     .bag_logo{
         width: var(--size-s-laptop-header);
         height: var(--size-s-laptop-header);

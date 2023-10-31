@@ -19,14 +19,6 @@
   justify-content: center;
   align-items: center;
 }
-.menu-categories {
-  display: flex;
-  width: 70vw;
-  margin: 2vw 0 2vw 0;
-  justify-content: space-evenly;
-  display: flex;
-  flex-wrap: wrap;
-}
 .all-products {
   display: flex;
   justify-content: center;
@@ -69,5 +61,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .container {
+    width: 80vw;
   }
 }
