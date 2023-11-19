@@ -44,7 +44,7 @@
 .productdisplay-right button{
     padding: 1.4vw 6vw;
     margin-right: 0.7vw;
-    font-size: 1vw;
+    font-size: 1.3vw;
     font-weight: 600;
     color: var(--highlight_blue);
     background: var(--buttonColor);
@@ -67,11 +67,14 @@
   }
   .button_series img{
     width: 0.7vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .button_series button{
     padding: 1.4vw 2.6vw;
     margin-right: 0.7vw;
-    font-size: 1vw;
+    font-size: 1.3vw;
     font-weight: 600;
     color: var(--highlight_blue);
     background: var(--buttonColor);
@@ -82,4 +85,100 @@
   .button_series button:hover{
     background: var(--circle_color-select);
 }
-@media screen and (max-width:426px) {}
+@media screen and (max-width:426px) {
+  .productContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1vw;
+}
+.productdisplay-center{
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    align-items: center;
+}
+.productdisplay-left{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.productdisplay-main-img{
+    width: 35vw;
+    height: 35vw;
+}
+.productdisplay-right{
+    padding-left: 0vw;
+    width: 70%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.productdisplay-right h1{
+    color: var(--textColor);
+    font-size: 5vw;
+    font-weight: 700;
+    margin: 0vw;
+    margin-top: 2vw;
+}
+.productdisplay-right-prices{
+    display: flex;
+    justify-content: center;
+    margin-top: 1vw;
+    font-size: 4.2vw;
+    font-weight: 700;
+    color: var(--highlight_blue);
+}
+.productdisplay-right-description{
+    margin: 2vw 0 3vw 0;
+    color: var(--text_70);
+    font-size: 1.8vw;
+    text-align: justify;
+}
+.button_holder{
+  display: flex;
+  justify-content: center;
+}
+.productdisplay-right button{
+    padding: 1.4vw 6vw;
+    margin-right: 0.7vw;
+    font-size: 4vw;
+    font-weight: 600;
+    color: var(--highlight_blue);
+    background: var(--buttonColor);
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.productdisplay-right button:hover{
+    color: var(--text_70);
+    background: var(--circle_color-select);
+}
+  .button_holder{
+    display: flex;
+  }
+  .button_holder img{
+    width: 1vw;
+  }
+  .button_series{
+    display: flex;
+  }
+  .button_series img{
+    width: 3vw;
+  }
+  .button_series button{
+    padding: 1.4vw 2.6vw;
+    margin-right: 0.7vw;
+    font-size: 4w;
+    font-weight: 600;
+    color: var(--highlight_blue);
+    background: var(--buttonColor);
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  .button_series button:hover{
+    background: var(--circle_color-select);
+}
+}

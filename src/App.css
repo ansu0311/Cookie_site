@@ -15,6 +15,7 @@
 .App{
   background-color: var(--appColor);
   color: var(--textColor);
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   overflow: hidden;
