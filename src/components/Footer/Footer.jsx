@@ -2,8 +2,8 @@ import React from 'react';
 import './Footer.css';
 import Logo from '../../assets2/full-logo-white.png';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import FacebookIcon from '@mui/icons-material/Facebook';
+import DribbleIcon from '@mui/icons-material/SportsBasketballOutlined';
+import ResumeIcon from '@mui/icons-material/DescriptionOutlined';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import { Link } from 'react-router-dom';
 
@@ -38,8 +38,8 @@ const Footer = () => {
             <div className="social-links">
                 <Link to="https://github.com/ansu0311"><GitHubIcon style={{fontSize: '3.4vw'}} className='customIcon' /></Link>
                 <Link to="https://www.linkedin.com/in/ansumannayak03/"><LinkedInIcon style={{fontSize: '3.4vw'}} className='customIcon' /></Link>
-                <FacebookIcon style={{fontSize: '3.4vw'}} className='customIcon' />
-                <InstagramIcon style={{fontSize: '3.4vw'}} className='customIcon' />
+                <Link to="https://dribbble.com/shots/23007481-Doughful-Elevating-the-Online-Cookie-Experience"><DribbleIcon style={{fontSize: '3.4vw'}} className='customIcon' /></Link>
+                <Link to="https://drive.google.com/file/d/1nAelXE1CLXMYDqlhg2yks1e0hGm_9kOO/view?usp=sharing"><ResumeIcon style={{fontSize: '3.4vw'}} className='customIcon' /></Link>
             </div>
             <div className="logo-f">
                 <img src={Logo} alt="" />
