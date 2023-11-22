@@ -4,6 +4,7 @@ import Logo from '../../assets2/full-logo-white.png';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import DribbleIcon from '@mui/icons-material/SportsBasketballOutlined';
 import ResumeIcon from '@mui/icons-material/DescriptionOutlined';
+import WebIcon from '@mui/icons-material/Language';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import { Link } from 'react-router-dom';
 
@@ -40,6 +41,7 @@ const Footer = () => {
                 <Link to="https://www.linkedin.com/in/ansumannayak03/"><LinkedInIcon style={{fontSize: '3.4vw'}} className='customIcon' /></Link>
                 <Link to="https://dribbble.com/shots/23007481-Doughful-Elevating-the-Online-Cookie-Experience"><DribbleIcon style={{fontSize: '3.4vw'}} className='customIcon' /></Link>
                 <Link to="https://drive.google.com/file/d/1nAelXE1CLXMYDqlhg2yks1e0hGm_9kOO/view?usp=sharing"><ResumeIcon style={{fontSize: '3.4vw'}} className='customIcon' /></Link>
+                <Link to="https://portfolio-website-fawn-mu.vercel.app/"><WebIcon style={{fontSize: '3.4vw'}} className='customIcon' /></Link>
             </div>
             <div className="logo-f">
                 <img src={Logo} alt="" />
