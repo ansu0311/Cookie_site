@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
-      name="description"
+      name="Ansuman Nayak"
       content="Web site created as a concept website for my fav Cookie company"
     />
     <!--
@@ -15,8 +15,14 @@
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cookie&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <style>
       * {
         font-family: "Inter", sans-serif;
@@ -31,10 +37,12 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <link rel="icon" href="../src/assets2/short-logo.ico">
+    <link rel="icon" href="../src/assets2/short-logo.ico" />
     <title>Dohful</title>
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
+    <div id="preloader"></div>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
@@ -47,6 +55,16 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-    <script src="https://kit.fontawesome.com/24e149df42.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/24e149df42.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      var loader = document.getElementById("preloader");
+      window.addEventListener("load", function () {
+        loader.style.transition = "display 2s";
+        loader.style.display = "none";
+      });
+    </script>
   </body>
 </html>

@@ -47,7 +47,30 @@ const Cart = () => {
           </div>
         </div>
       );
-    } else {
+    } 
+    else if(condition && Number(qunatity)>1){
+      let num_qunat = Number(qunatity);      
+      let even_quantity = parseInt(num_qunat / 2)
+      let odd_quantity = num_qunat - (even_quantity*2)
+      let total_cart_value = (price * odd_quantity) + (price * 2 * even_quantity * 0.8)
+      return (
+        <div style={{ display: "flex", flexDirection: "column" }}>
+          <div style={{ textDecoration: "l", fontSize: "01vw" }}>
+            <s>
+              Rs.{" "}
+              <span className="fontchange">{Math.round((num_qunat) * price)}</span>
+            </s>
+          </div>
+          <div style={{ fontSize: "1vw" }}>
+            Rs.{" "}
+            <span className="fontchange">
+              {Math.round(total_cart_value)}
+            </span>
+          </div>
+        </div>
+      );
+    }
+    else {
       return (
         <div style={{ fontSize: "1vw" }}>
           Rs. <span className="fontchange">{Math.round(qunatity * price)}</span>
