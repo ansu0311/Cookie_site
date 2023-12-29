@@ -1,5 +1,5 @@
 import './App.css';
-import React from 'react';
+import React, { useState } from 'react';
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Homepage from "./Pages/Homepage";
@@ -12,6 +12,17 @@ import Productpage from './Pages/Productpage';
 import ShopContextProvider from "./Context/ShopContext";
 
 function App() {
+  
+  //preloader
+  const[loading,setLoading] = useState(true)
+  const spinner = document.getElementById("spinner")
+  if(spinner){
+    setTimeout(()=>{
+      spinner.style.display = "none"
+      setLoading(false)
+    },3500);
+  }
+
   return (
     <div className='App'>
     <ShopContextProvider>

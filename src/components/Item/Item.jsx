@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import "./Item.css";
 import right_arrow from "../../assets2/right-arrow.png";
 import { Link } from "react-router-dom";
+import LazyLoad from 'react-lazy-load';
 
 const Item = (props) => {
 
@@ -12,7 +13,9 @@ const Item = (props) => {
   return (
     <div>
       <div className="flex-column-bestselling category1">
-        <img src={props.image} alt="loko" />
+      <LazyLoad className="cookie_img" threshold={0.95}>
+        <div className="cookie_img" ><img src={props.image} alt="loko" /></div>
+        </LazyLoad>
         <div className="flex-column-bestselling text_child">
           <div className="Cookie_heading">{props.heading}</div>
           <div className="Cookie_heading for-best">For</div>

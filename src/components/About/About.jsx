@@ -15,9 +15,9 @@ const About = () => {
         &nbsp;Satisfy your sweet cravings with every bite Try them today.&nbsp;
         <div className='plans_img plans_img1'>perfection</div>
         </div> */}
-        <dir className='image_cont_about'>
+        <div className='image_cont_about'>
           <img className='total_text' src={total_text} alt="text design" />
-        </dir>
+        </div>
     </div>
   )
 }

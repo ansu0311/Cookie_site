@@ -89,6 +89,9 @@
   background: var(--circle_color-select);
   cursor: pointer;
 }
+.cookie_img{
+  z-index: 5;
+}
 @media screen and (max-width: 426px) {
   .Reasons-header {
     font-size: 9vw;

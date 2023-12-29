@@ -1,0 +1,15 @@
+body{
+  margin: 0;
+}
+.back {
+  align-items: center;
+  background-color: #11131B;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  width: 100vw;
+}
+.preloader {
+  width: 15vw;
+  height: 15vw;
+}
